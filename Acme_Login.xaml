@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>488,1634</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>959,1634</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Acme_Login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -80,6 +80,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Workflows: Acme_Login&#xA;Descrição: Digite e-mail, senha e faça login na Acme&#xA;Condição prévia: A página de login da Acme está aberta no Edge e ainda não está conectada&#xA;Pós-condição: Logado na Acme&#xA;Argumentos: in_StrCred: String&#xA;" DisplayName="Acme_Login" sap:VirtualizedContainerService.HintSize="498,1569" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -107,7 +108,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_StrCred]" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="368,80" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[var_PswSenha]" Username="[var_StrUsuario]" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'E-mail'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="368,217" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="cdca5223-07d0-4f6a-b2a5-b5cee8e1cf53" Text="[var_StrUsuario]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'E-mail'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="368,217" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="cdca5223-07d0-4f6a-b2a5-b5cee8e1cf53" Text="[var_StrUsuario]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" DesignTimeRectangle="183, 392, 485, 34" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' aaname='E-mail:' /&gt;" Guid="a786d440-71f2-4938-a82e-5639730357b5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAekAAAAmCAYAAADgB2NCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVHhe7dgxisJQGIXR2f/aJCtIZyGCiAgBxZg33CEJWkxp/Itz4BZ5ef1H8tMAgJJEGgCKeov0MAyt7/vWdV3b7XZmZma2wdLd9DcdfrVGOi9yab/ft9Pp1M7ns5mZmW2wdDf9TYdfQ71GOgXPhev12u73e3s+n2ZmZrbB0t30Nx1OjxdrpFPvy+XSxnFs0zTNpwDAp6W76W86nB4v1kjnn/jtdhNoAPiC9DcdTo8Xb5HOJzcA8B3psEgDQEEiDQBFiTQAFCXSAFCUSANAUSINAEWJNAAUJdIAUJRIA0BRIg0ARYk0ABQl0gBQlEgDQFEiDQBFiTQAFCXSAFCUSANAUSINAEWJNAAUJdIAUJRIA0BRIg0ARYk0ABQl0gBQ1L+R7rquPR6P+QkA2Fo6nB4v1kj3fd8Oh0Obpmk+AQC2kv6mw+nxYo30MAx/9T4ej20cx/kUAPi0dDf9TYfT48Ua6ciLFDyX8k/czMzMPr90N/19DXS8RRoAqEOkAaCk1n4BOGRylpSr+hAAAAAASUVORK5CYII=" InformativeScreenshot="69c0bd7219b3cb9d5c7d661c995857c8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sistema ACME 1 - Login' /&gt;" SearchSteps="Selector, FuzzySelector">
                   <uix:TargetAnchorable.Anchors>
@@ -118,7 +119,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="368,242" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="cdca5223-07d0-4f6a-b2a5-b5cee8e1cf53" SecureText="[var_PswSenha]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="368,242" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" IsPassword="True" ScopeIdentifier="cdca5223-07d0-4f6a-b2a5-b5cee8e1cf53" SecureText="[var_PswSenha]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" DesignTimeRectangle="183, 466, 485, 34" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='Senha:' /&gt;" Guid="9f77a119-dc08-4535-a0e5-8536fd1bc7fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAekAAAAmCAYAAADgB2NCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMeSURBVHhe7d1LTttgGEbhf7WdsBX2UjHsoJ0wYgPlUpDaIEDNhVwIGMeXrxwTVww6KVX9e3Ae6UVRYpge2bJJKqo2tmUT66KJxVMT020ddw913KyruH7ZZFXFj+XrvjvnnHPun9Y3lb7SWXpLd+kvHabHdJk+J16sXt6YP77GmV/gj1wudnEx38X5bBdn0zJO9/vqnHPOuXetbyldpa90lt7SXfpLh+kxXabPiWLzxu2mipNJEYfHyzg4msaHjz+dc845N8DoLv2lw/SYLtPnxKk15eYDDvp0uoy72X3c3zvnnHNuiNFd+kuH6TFdps+Ja+CcYlNwDthsNlGWZTRN45xzzrkBRnfpLx2mx3SZPidqzbVw6j1bbqKu62jbNiRJ0jDoLv2lw/SYLtPnxF1lV4tdd038+fnZQEuSlAH9pcP0mC7T58QpNXeX8San3JIkKQ86TI/pMn1OPKfFbeBGWpKkvPpI02X6nHigmue1jLQkSXn1kabL9LmLNA9WG2lJkvLqI02Xu0hzB5mRliQpv7eRps9dpPlXZUZakqS8+kjTZSMtSdKIGGlJkkbKSEuSNFJGWpKkkTLSkiSNlJGWJGmkjLQkSSNlpCVJGikjLUnSSBlpSZJGykhLkjRSRlqSpJEy0pIkjdQfI+1XVUqSlF8f6d9fVcmXShtpSZLyextp+txF+sxIS5KUXR9putxFerKq4ny2M9KSJGXWR5ou0+d0va7iYm6kJUnKrY80XabP6eblx9XCSEuSlFsfabpMn9PdQ93dQXZwNI2nst4fJkmShkaH6TFdps9puq27U+rD42V8/raNtm33h0qSpKHQXzpMj+kyfU6Lp6ar9cmk6Or95eoxispQS5I0FLpLf+kwPabL9Dmtiybmj3XcbqruAwrOQVwTd84559z/H92lv3SYHtNl+py2ZROrfagpN6fYXAu/XOy6u8u4DZzntXiwmvGvypxzzjn39+tbSlfpK52lt3SX/tJhekyX6XPiFJsXFJtTa66BcxB3lfELPKfFA9WMP+Kcc865969vKn2ls/SW7tJfOkyP6XJRtfELisH5dFz8yzcAAAAASUVORK5CYII=" InformativeScreenshot="de4ec91770fa230d2fbde522e4303d3d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sistema ACME 1 - Login' /&gt;" SearchSteps="FuzzySelector">
                   <uix:TargetAnchorable.Anchors>

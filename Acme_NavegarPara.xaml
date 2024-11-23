@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>488,907</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>959,907</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Acme_NavegarPara_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -80,7 +80,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Workflows: Acme_NavegarPara&#xD;&#xA;Descrição: Mover de qualquer página da Acme para o URL de destino&#xD;&#xA;Condição prévia: Conectado a qualquer página da Acme no Edge&#xD;&#xA;Pós-condição: Movido de qualquer página da Acme para o URL de destino&#xD;&#xA;Argumentos: in_StrURL: String&#xD;&#xA;" DisplayName="Acme_NavegarPara" sap:VirtualizedContainerService.HintSize="498,842" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflows: Acme_NavegarPara&#xA;Descrição: Mover de qualquer página da Acme para o URL de destino&#xA;Condição prévia: Conectado a qualquer página da Acme no Edge&#xA;Pós-condição: Movido de qualquer página da Acme para o URL de destino&#xA;Argumentos: in_StrURL: String&#xA;" DisplayName="Acme_NavegarPara" sap:VirtualizedContainerService.HintSize="498,842" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -88,7 +88,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Navegar-Inicio&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sistema ACME 1 - Painel" sap:VirtualizedContainerService.HintSize="450,395" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5abedd1b-41f9-4f62-b1dc-49c1090161c0" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Sistema ACME 1 - Painel" sap:VirtualizedContainerService.HintSize="450,395" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="5abedd1b-41f9-4f62-b1dc-49c1090161c0" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

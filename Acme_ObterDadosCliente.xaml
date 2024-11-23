@@ -141,7 +141,7 @@
                       <OutArgument x:TypeArguments="x:String">[out_StrClientID]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[var_arrDadosCliente(0)]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[var_arrDadosCliente(0).Trim]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -149,7 +149,7 @@
                       <OutArgument x:TypeArguments="x:String">[out_StrClientName]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[var_arrDadosCliente(1)]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[var_arrDadosCliente(1).TrimStart.TrimEnd]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -157,7 +157,7 @@
                       <OutArgument x:TypeArguments="x:String">[out_StrCountry]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[var_arrDadosCliente(2)]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[var_arrDadosCliente(2).TrimStart.TrimEnd]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                 </scg:List>
